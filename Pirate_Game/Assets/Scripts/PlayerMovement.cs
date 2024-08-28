@@ -1,15 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerMovement : MonoBehaviour{
     [Header("Movement")]
     public float moveSpeed;
     public float groundDrag;
-    public float jumpForce;
-    public float jumpCooldown;
-    public float airMultiplier;
-    bool readyToJump;
+
     [Header("Ground Check")]
     public float playerHeight;
     public LayerMask whatIsGround;
@@ -23,6 +21,10 @@ public class PlayerMovement : MonoBehaviour{
 
     Vector3 moveDirection;
 
+    public float jumpForce;
+
+    public bool isOnGround = true;
+
     Rigidbody rb;
 
     private void Start(){
@@ -34,7 +36,7 @@ public class PlayerMovement : MonoBehaviour{
     private void Update(){
         //getting my input every frame
         //checks if ground is below
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
+        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.3f, whatIsGround);
 
         MyInput();
         SpeedControl();
@@ -43,6 +45,11 @@ public class PlayerMovement : MonoBehaviour{
             rb.drag = groundDrag;
         else
             rb.drag = 0;
+
+        if (Input.GetKeyDown(KeyCode.Space) && isOnGround){
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            isOnGround = false;
+        }
     }
 
     private void FixedUpdate(){
@@ -53,24 +60,14 @@ public class PlayerMovement : MonoBehaviour{
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
-        //telling when I jump
-        if(Input.GetKey(jumpKey) && readyToJump && grounded){
-            readyToJump = false;
-
-            Jump();
-            Invoke(nameof(ResetJump), jumpCooldown);
-        }
+        
     }
 
     private void MovePlayer(){
         //movement direction
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput; 
         //on the ground
-        if(grounded)
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
-        //in the air
-        else if(!grounded)
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
+        rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
     }
 
     private void SpeedControl(){
@@ -84,13 +81,10 @@ public class PlayerMovement : MonoBehaviour{
 
     }
 
-    private void Jump(){
-        rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+    private void OnCollisionEnter(Collision collision) {
+        if (collision.gameObject.CompareTag("Ground")){
+            isOnGround = true;
+        }
+    }
 
-        rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
-    }
-    
-    private void ResetJump(){
-        readyToJump = true;
-    }
 }
