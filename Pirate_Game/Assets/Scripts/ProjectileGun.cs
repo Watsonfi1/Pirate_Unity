@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ProjectileGun : MonoBehaviour{
     public GameObject bullet;
@@ -15,9 +16,13 @@ public class ProjectileGun : MonoBehaviour{
     bool shooting, readyToShoot, reloading;
 
     public KeyCode shootKey = KeyCode.Mouse0;
+    public KeyCode reloadKey = KeyCode.R;
 
-    public Camera fpsCam;
+    public Camera playerCam;
     public Transform attackPoint;
+
+    public GameObject muzzleFlash;
+    public TextMeshProUGUI ammunitionDisplay;
 
     public bool allowInvoke = true;
 
@@ -27,15 +32,22 @@ public class ProjectileGun : MonoBehaviour{
     }
 
     private void Update(){
-        MyInput()
+        MyInput();
+
+        if (ammunitionDisplay != null)
+            ammunitionDisplay.SetText(bulletsLeft + "/" + magazineSize);
     }
 
     private void MyInput(){
         if (allowButtonHold) shooting = Input.GetKey(shootKey);
         else shooting = Input.GetKeyDown(shootKey);
 
+        if (Input.GetKeyDown(reloadKey) && bulletsLeft < magazineSize && !reloading) Reload();
+
+        if (readyToShoot && shooting && !reloading && bulletsLeft <= 0) Reload();
+
         if (readyToShoot && shooting && !reloading && bulletsLeft > 0){
-            bulletsShot = 0
+            bulletsShot = 0;    
 
             Shoot();
         }
@@ -45,7 +57,7 @@ public class ProjectileGun : MonoBehaviour{
     private void Shoot(){
         readyToShoot = false;
 
-        Ray ray = fpsCam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
+        Ray ray = playerCam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
         RaycastHit hit;
 
         Vector3 targetPoint;
@@ -57,17 +69,40 @@ public class ProjectileGun : MonoBehaviour{
         Vector3 directionWithoutSpread = targetPoint - attackPoint.position;
 
         float x = Random.Range(-spread, spread);
-        float x = Random.Range(-spread, spread);
+        float y = Random.Range(-spread, spread);
 
         Vector3 directionWithSpread = directionWithoutSpread + new Vector3(x, y, 0);
 
-        GameObject currentBullet = Instantiate(bullet, attackPoint.poition, Quaternion.identity);
+        GameObject currentBullet = Instantiate(bullet, attackPoint.position, Quaternion.identity);
 
         currentBullet.transform.forward = directionWithSpread.normalized;
         
+        currentBullet.GetComponent<Rigidbody>().AddForce(directionWithSpread.normalized * shootForce, ForceMode.Impulse);
+        currentBullet.GetComponent<Rigidbody>().AddForce(playerCam.transform.up * upwardForce, ForceMode.Impulse);
+
+        if (muzzleFlash != null)
+            Instantiate(muzzleFlash, attackPoint.position, Quaternion.identity);
 
         bulletsLeft--;
         bulletsShot++;
+
+        if (allowInvoke){
+            Invoke("ResetShot", timeBetweenShooting);
+            allowInvoke = false;
+        }
     }
 
+    private void ResetShot(){
+        readyToShoot = true;
+        allowInvoke = true;
+    }
+
+    private void Reload(){
+        reloading = true;
+        Invoke("ReloadFinished", reloadTime);
+    }
+    private void ReloadFinished(){
+        bulletsLeft = magazineSize;
+        reloading = false;
+    }
 }
