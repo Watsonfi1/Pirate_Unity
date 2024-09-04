@@ -24,11 +24,14 @@ public class ProjectileGun : MonoBehaviour{
     public GameObject muzzleFlash;
     public TextMeshProUGUI ammunitionDisplay;
 
+    public Animator animator;
+
     public bool allowInvoke = true;
 
     private void Awake(){
         bulletsLeft = magazineSize;
         readyToShoot = true;
+        animator = GetComponent<Animator>();
     }
 
     private void Update(){
