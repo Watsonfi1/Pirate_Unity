@@ -102,6 +102,7 @@ public class ProjectileGun : MonoBehaviour{
 
     private void Reload(){
         reloading = true;
+        animator.SetTrigger("reload");
         Invoke("ReloadFinished", reloadTime);
     }
     private void ReloadFinished(){
