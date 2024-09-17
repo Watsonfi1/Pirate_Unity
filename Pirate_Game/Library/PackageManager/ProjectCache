@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638609277240413184
-    m_Hash: 1050023025
+      ticks: 638621348594545166
+    m_Hash: 3527727550
   m_LockFileStatus:
     m_FilePath: C:/Users/watsonfi/Documents/GitHub/Pirate_Unity/Pirate_Game/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638609277340616894
-    m_Hash: 3251414327
+      ticks: 638621348594647812
+    m_Hash: 3143425837
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -22,6 +22,76 @@ m_LocalPackages:
 m_ProjectPath: C:/Users/watsonfi/Documents/GitHub/Pirate_Unity/Pirate_Game/Packages
 m_EditorVersion: 2021.3.14f1 (eee1884e7226)
 m_ResolvedPackages:
+- packageId: com.unity.ai.navigation@1.0.0-exp.4
+  testable: 0
+  isDirectDependency: 1
+  version: 1.0.0-exp.4
+  source: 1
+  resolvedPath: C:\Users\watsonfi\Documents\GitHub\Pirate_Unity\Pirate_Game\Library\PackageCache\com.unity.ai.navigation@1.0.0-exp.4
+  assetPath: Packages/com.unity.ai.navigation
+  name: com.unity.ai.navigation
+  displayName: AI Navigation
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: High-level NavMesh components for building and using NavMeshes at
+    runtime and at edit time.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.0-exp.1
+    - 1.0.0-exp.2
+    - 1.0.0-exp.3
+    - 1.0.0-exp.4
+    - 1.1.0-pre.1
+    - 1.1.0-pre.2
+    - 1.1.1
+    - 1.1.3
+    - 1.1.4
+    - 1.1.5
+    - 2.0.0-pre.3
+    - 2.0.0-pre.4
+    - 2.0.0
+    - 2.0.3
+    - 2.0.4
+    compatible:
+    - 1.0.0-exp.1
+    - 1.0.0-exp.2
+    - 1.0.0-exp.3
+    - 1.0.0-exp.4
+    verified: 
+  dependencies:
+  - name: com.unity.modules.ai
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.modules.ai
+    version: 1.0.0
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 637631812400000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.ai.navigation.git
+    revision: e38a28933e4513afa2b6084c2948852bd9daad56
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
 - packageId: com.unity.collab-proxy@1.17.6
   testable: 0
   isDirectDependency: 1
@@ -118,6 +188,7 @@ m_ResolvedPackages:
     - 2.3.1
     - 2.4.3
     - 2.4.4
+    - 2.5.1
     compatible:
     - 1.17.6
     - 1.17.7
@@ -142,6 +213,7 @@ m_ResolvedPackages:
     - 2.3.1
     - 2.4.3
     - 2.4.4
+    - 2.5.1
     verified: 1.17.7
   dependencies:
   - name: com.unity.services.core
