@@ -108,7 +108,7 @@ NavMeshSettings:
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
-    agentSlope: 45
+    agentSlope: 25.7
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
@@ -1125,6 +1125,7 @@ GameObject:
   - component: {fileID: 1845643827}
   - component: {fileID: 1845643826}
   - component: {fileID: 1845643825}
+  - component: {fileID: 1845643828}
   m_Layer: 10
   m_Name: Terrain
   m_TagString: Ground
@@ -1192,6 +1193,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1845643828
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845643824}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 80a6cb25e0142e74c8d957a63b87bd17, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2053515764
 GameObject:
   m_ObjectHideFlags: 0
@@ -1598,6 +1619,104 @@ MonoBehaviour:
   ammunitionDisplay: {fileID: 0}
   animator: {fileID: 4492127288524903613}
   allowInvoke: 1
+--- !u!1001 &7252137276229932530
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1113165011864985642, guid: 95a36c63741a13242a62e3b9e5565dd2, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113165011864985642, guid: 95a36c63741a13242a62e3b9e5565dd2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 39.80554
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113165011864985642, guid: 95a36c63741a13242a62e3b9e5565dd2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.99382555
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113165011864985642, guid: 95a36c63741a13242a62e3b9e5565dd2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 29.582376
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113165011864985642, guid: 95a36c63741a13242a62e3b9e5565dd2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113165011864985642, guid: 95a36c63741a13242a62e3b9e5565dd2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113165011864985642, guid: 95a36c63741a13242a62e3b9e5565dd2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113165011864985642, guid: 95a36c63741a13242a62e3b9e5565dd2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113165011864985642, guid: 95a36c63741a13242a62e3b9e5565dd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113165011864985642, guid: 95a36c63741a13242a62e3b9e5565dd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113165011864985642, guid: 95a36c63741a13242a62e3b9e5565dd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7084310101379986733, guid: 95a36c63741a13242a62e3b9e5565dd2, type: 3}
+      propertyPath: m_Name
+      value: Skeleton
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 95a36c63741a13242a62e3b9e5565dd2, type: 3}
+--- !u!1 &7252137276229932531 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7084310101379986733, guid: 95a36c63741a13242a62e3b9e5565dd2, type: 3}
+  m_PrefabInstance: {fileID: 7252137276229932530}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &7252137276229932532
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7252137276229932531}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!195 &7252137276229932533
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7252137276229932531}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 8
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!199 &7500778439923029454
 ParticleSystemRenderer:
   serializedVersion: 6
