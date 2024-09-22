@@ -15,7 +15,7 @@ C:/Users/watsonfi/Documents/GitHub/Pirate_Unity/Pirate_Game
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57569
+63207
 Successfully changed project path to: C:/Users/watsonfi/Documents/GitHub/Pirate_Unity/Pirate_Game
 C:/Users/watsonfi/Documents/GitHub/Pirate_Unity/Pirate_Game
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/watsonfi/Documents/GitHub/Pirate_Unity/Pirate_Game
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 106.09 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 124.53 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.14f1 (eee1884e7226)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Resources/UnitySubsystems
@@ -63,78 +63,78 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.14f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.14f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56384
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56424
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.009657 seconds.
+Registered in 0.017788 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 100.12 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 113.26 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.207 seconds
+- Completed reload, in  0.890 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1207ms)
-		BeginReloadAssembly (96ms)
+	ReloadAssembly (890ms)
+		BeginReloadAssembly (107ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (801ms)
-			LoadAssemblies (93ms)
+		EndReloadAssembly (626ms)
+			LoadAssemblies (104ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (339ms)
+			SetupTypeCache (142ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (362ms)
+			SetupLoadedEditorAssemblies (383ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
+				InitializePlatformSupportModulesInManaged (12ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (100ms)
+				RefreshPlugins (113ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (180ms)
-				ProcessInitializeOnLoadMethodAttributes (68ms)
+				ProcessInitializeOnLoadAttributes (191ms)
+				ProcessInitializeOnLoadMethodAttributes (65ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.008522 seconds.
+Registered in 0.008274 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\watsonfi\Documents\GitHub\Pirate_Unity\Pirate_Game\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\watsonfi\Documents\GitHub\Pirate_Unity\Pirate_Game\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.96 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.537 seconds
+- Completed reload, in  1.370 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1538ms)
-		BeginReloadAssembly (144ms)
+	ReloadAssembly (1371ms)
+		BeginReloadAssembly (149ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (1243ms)
-			LoadAssemblies (110ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (1070ms)
+			LoadAssemblies (115ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (341ms)
+			SetupTypeCache (354ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (66ms)
-			SetupLoadedEditorAssemblies (675ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (492ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (136ms)
-				ProcessInitializeOnLoadAttributes (486ms)
-				ProcessInitializeOnLoadMethodAttributes (32ms)
+				BeforeProcessingInitializeOnLoad (115ms)
+				ProcessInitializeOnLoadAttributes (318ms)
+				ProcessInitializeOnLoadMethodAttributes (37ms)
 				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -143,12 +143,12 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3536 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 40 unused Assets / (1.3 MB). Loaded Objects now: 4000.
-Memory consumption went from 147.5 MB to 146.2 MB.
-Total: 3.871300 ms (FindLiveObjects: 0.340900 ms CreateObjectMapping: 0.166400 ms MarkObjects: 3.046800 ms  DeleteObjects: 0.316100 ms)
+Unloading 3535 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (1.3 MB). Loaded Objects now: 4000.
+Memory consumption went from 147.5 MB to 146.1 MB.
+Total: 4.200100 ms (FindLiveObjects: 0.372200 ms CreateObjectMapping: 0.370200 ms MarkObjects: 3.113600 ms  DeleteObjects: 0.342700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -162,145 +162,13 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1466767.177320 seconds.
-  path: Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/contents.png
-  artifactKey: Guid(2db84044158faab47bfd77d1c60befdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/contents.png using Guid(2db84044158faab47bfd77d1c60befdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc63bf8c02354bb26ed1ac75d0539e90') in 0.265642 seconds 
+  Time since last request: 1467956.950422 seconds.
+  path: Assets/New Terrain 1.asset
+  artifactKey: Guid(ce86edb575a619449b597ce2a7a0e3b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain 1.asset using Guid(ce86edb575a619449b597ce2a7a0e3b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5738543fec3d2edcb92a1545e643c45e') in 0.078886 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.997658 seconds.
-  path: Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/assets/fbx/Skeleton_Arrow-fc1d3f7f6792751d7f12d5bb5e1a8cf4_skeleton_texture.png
-  artifactKey: Guid(daa78abdf937157499525ea55be31461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/assets/fbx/Skeleton_Arrow-fc1d3f7f6792751d7f12d5bb5e1a8cf4_skeleton_texture.png using Guid(daa78abdf937157499525ea55be31461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97e39502c301d68be4ca18adb0f368f6') in 0.062217 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/assets/fbx/Skeleton_Shield_Large_B-131f8d3688f09bc7985a89e37807ca95_skeleton_texture.png
-  artifactKey: Guid(c97527d905cfc68459ba639c83c2efab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/assets/fbx/Skeleton_Shield_Large_B-131f8d3688f09bc7985a89e37807ca95_skeleton_texture.png using Guid(c97527d905cfc68459ba639c83c2efab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fc83b5a63277e43bc85cf2c002e1978') in 0.037783 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/assets/fbx/Skeleton_Arrow_Half-e2e4dfeb7d07d7e8448000b8a537bb09_skeleton_texture.png
-  artifactKey: Guid(57227fb4a5b9fcc498e558c483edc9b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/assets/fbx/Skeleton_Arrow_Half-e2e4dfeb7d07d7e8448000b8a537bb09_skeleton_texture.png using Guid(57227fb4a5b9fcc498e558c483edc9b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '020a6fb6b43af17077fe4190e682c269') in 0.037053 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/assets/fbx/Skeleton_Blade-e838ea95c6745753aac04952809d9141_skeleton_texture.png
-  artifactKey: Guid(cc63aa93414871b459be612635a00f08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/assets/fbx/Skeleton_Blade-e838ea95c6745753aac04952809d9141_skeleton_texture.png using Guid(cc63aa93414871b459be612635a00f08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a729b461ecdcf3b7f5b7637ed5c783f') in 0.037467 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/assets/fbx/Skeleton_Staff-7b730d2ab7ce08252d54e98dadf8570e_skeleton_texture.png
-  artifactKey: Guid(f9b7f49c7d5ee8c4788e1f6e687ef549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/assets/fbx/Skeleton_Staff-7b730d2ab7ce08252d54e98dadf8570e_skeleton_texture.png using Guid(f9b7f49c7d5ee8c4788e1f6e687ef549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6365bcd0166e23f8a3ca6715bf4f549f') in 0.038612 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/assets/fbx/Skeleton_Shield_Large_A-b6f2b7b6dc614b063e3c47b19c4b024c_skeleton_texture.png
-  artifactKey: Guid(89506a37816babd4b933af74d712ce0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/assets/fbx/Skeleton_Shield_Large_A-b6f2b7b6dc614b063e3c47b19c4b024c_skeleton_texture.png using Guid(89506a37816babd4b933af74d712ce0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d41aff96d11aeaa5b45f11558e079b8') in 0.039942 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/assets/fbx/Skeleton_Arrow_Broken-cecdbb2976f96c790c034dcd2f01b15f_skeleton_texture.png
-  artifactKey: Guid(46927cfe8c32f6a4380963443ab9bccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/assets/fbx/Skeleton_Arrow_Broken-cecdbb2976f96c790c034dcd2f01b15f_skeleton_texture.png using Guid(46927cfe8c32f6a4380963443ab9bccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fc6e31c8f04f114bc1709330142aeab') in 0.038503 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/assets/fbx/Skeleton_Shield_Small_B-75a8eb16067e961a2dab13c325979bb6_skeleton_texture.png
-  artifactKey: Guid(9ccaf73c2e275fc499dcad3e947a7a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/assets/fbx/Skeleton_Shield_Small_B-75a8eb16067e961a2dab13c325979bb6_skeleton_texture.png using Guid(9ccaf73c2e275fc499dcad3e947a7a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7526688c6f2d5b0567d416a7b047893c') in 0.039105 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/assets/fbx/skeleton_texture.png
-  artifactKey: Guid(c5b2a68ab3cc9e24e82ce90af81cde62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/assets/fbx/skeleton_texture.png using Guid(c5b2a68ab3cc9e24e82ce90af81cde62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a025285e6e00c98115e44a3f930b7a8') in 0.057768 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/assets/fbx/Skeleton_Crossbow-34ddd9e4ebb1891288cf83c084f5e650_skeleton_texture.png
-  artifactKey: Guid(d42a050a5d746bb4ea9e963b70d2ca5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/assets/fbx/Skeleton_Crossbow-34ddd9e4ebb1891288cf83c084f5e650_skeleton_texture.png using Guid(d42a050a5d746bb4ea9e963b70d2ca5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34a1a5df3c48847a5d8c8f5b5e1b3c81') in 0.038660 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/assets/fbx/Skeleton_Arrow_Broken_Half-b1c773f00ed9d2d5fb897f4feee70009_skeleton_texture.png
-  artifactKey: Guid(bb59d14f8015a39469970bb3c511790c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/assets/fbx/Skeleton_Arrow_Broken_Half-b1c773f00ed9d2d5fb897f4feee70009_skeleton_texture.png using Guid(bb59d14f8015a39469970bb3c511790c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4467a8998f9b099cef9192d5bc393c4e') in 0.038360 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/assets/fbx/Skeleton_Quiver-5dd58477cd371e47ea96130ea6c7a836_skeleton_texture.png
-  artifactKey: Guid(dfa6edb5adad56847bd01e99b66fd2fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/assets/fbx/Skeleton_Quiver-5dd58477cd371e47ea96130ea6c7a836_skeleton_texture.png using Guid(dfa6edb5adad56847bd01e99b66fd2fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e18090c87b3b9953350f7bd62ac89609') in 0.037763 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/assets/fbx/Skeleton_Shield_Small_A-af1388e927abdfc405a3a6ffd1fc3854_skeleton_texture.png
-  artifactKey: Guid(fc452f284745fe7439f0d02948de2103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/assets/fbx/Skeleton_Shield_Small_A-af1388e927abdfc405a3a6ffd1fc3854_skeleton_texture.png using Guid(fc452f284745fe7439f0d02948de2103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fbb5153da7ba3527b637155ecc60aa5') in 0.035344 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/assets/fbx/Skeleton_Axe-1bcde5ed80677fe574771a03a589e92e_skeleton_texture.png
-  artifactKey: Guid(46e02eb5a176a954cae8309f8c155808) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/assets/fbx/Skeleton_Axe-1bcde5ed80677fe574771a03a589e92e_skeleton_texture.png using Guid(46e02eb5a176a954cae8309f8c155808) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '755082cb711674036dfc017b9a069c92') in 0.041553 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.407481 seconds.
-  path: Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/characters/fbx/Skeleton_Mage-6465cf481e19effe86d9a0fdfd09a882_skeleton_texture.png
-  artifactKey: Guid(01fc56e6a75e0114a949168c6780f314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/characters/fbx/Skeleton_Mage-6465cf481e19effe86d9a0fdfd09a882_skeleton_texture.png using Guid(01fc56e6a75e0114a949168c6780f314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7476c2f7f13e5da86ed424bdfff7219b') in 0.063212 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/characters/fbx/Skeleton_Minion-49b0f610e89fad98cc0fd3aef6020a9f_skeleton_texture.png
-  artifactKey: Guid(5846cbff062904a4db97aedf2f1d478f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/characters/fbx/Skeleton_Minion-49b0f610e89fad98cc0fd3aef6020a9f_skeleton_texture.png using Guid(5846cbff062904a4db97aedf2f1d478f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '217e855fd979af3ce5caa6592c2e154d') in 0.051114 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/characters/fbx/Skeleton_Warrior-c35168144ae4959676c95feea95836f0_skeleton_texture.png
-  artifactKey: Guid(35ff64c88e2ab7340b653ccc6149de18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/characters/fbx/Skeleton_Warrior-c35168144ae4959676c95feea95836f0_skeleton_texture.png using Guid(35ff64c88e2ab7340b653ccc6149de18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2670aacad209b928cf3574fa3ba92795') in 0.047733 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/characters/fbx/Skeleton_Rogue-82b75a24152732c58e143006bb3bb664_skeleton_texture.png
-  artifactKey: Guid(e27df335081a3dc45ae320c95c9c2e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/characters/fbx/Skeleton_Rogue-82b75a24152732c58e143006bb3bb664_skeleton_texture.png using Guid(e27df335081a3dc45ae320c95c9c2e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b32fcdf31e22946e97f69a5d6239e856') in 0.037518 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/characters/fbx/skeleton_texture.png
-  artifactKey: Guid(66a1ad15d91572b40b0548caf3e50720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/characters/fbx/skeleton_texture.png using Guid(66a1ad15d91572b40b0548caf3e50720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '626dd35ed78d02c95d6bf950c02ec100') in 0.044461 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 96.653484 seconds.
-  path: Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/characters/fbx/Skeleton_Minion.fbx.import
-  artifactKey: Guid(f28ec097e77b0bd4f987758e18c8d13b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/KayKit_Skeletons_1.0_FREE/KayKit_Skeletons_1.0_FREE/characters/fbx/Skeleton_Minion.fbx.import using Guid(f28ec097e77b0bd4f987758e18c8d13b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac436d0e8e97994b82f7603d7d9e3abe') in 0.016260 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 308.742758 seconds.
-  path: Assets/Characters
-  artifactKey: Guid(2ccac1410ceb03a498a2a96919c06635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters using Guid(2ccac1410ceb03a498a2a96919c06635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f08dd3ffdc3716b5478e84541cadec78') in 0.015366 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.025383 seconds.
-  path: Assets/Prefabs
-  artifactKey: Guid(56b440765028ff84f86efce5e0388d20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs using Guid(56b440765028ff84f86efce5e0388d20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c1567bcdadc848c079d190f8c402691') in 0.012325 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.629583 seconds.
-  path: Assets/Prefabs/Skeleton.prefab
-  artifactKey: Guid(95a36c63741a13242a62e3b9e5565dd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Skeleton.prefab using Guid(95a36c63741a13242a62e3b9e5565dd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd71a55e253c35696e2d5218e275d3b2d') in 0.139146 seconds 
+  Time since last request: 0.000025 seconds.
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(9ced104b8e93634408c8e7efefad4a44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(9ced104b8e93634408c8e7efefad4a44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b25e79f03a38cbcedd173ea70e50452') in 0.015983 seconds 
