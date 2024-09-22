@@ -109,4 +109,10 @@ public class ProjectileGun : MonoBehaviour{
         bulletsLeft = magazineSize;
         reloading = false;
     }
+
+    private void OnCollisionEnter(Collision collision) {
+        if (collision.gameObject.name.Contains ("Bullet")){
+            Destroy (gameObject);
+        }
+    }
 }
