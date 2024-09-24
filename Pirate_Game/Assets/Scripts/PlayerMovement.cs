@@ -4,6 +4,9 @@ using UnityEngine;
 using TMPro;
 
 public class PlayerMovement : MonoBehaviour {
+
+    public class Enemy : Entity { }
+
     [Header("Movement")]
     private float moveSpeed;
     public float walkSpeed;
