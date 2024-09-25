@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using KBCore.Refs;
 
-public class Enemy : MonoBehaviour{
+namespace Platformer{
     [RequireComponent(typeof(NavMeshAgent))]
     public class Enemy : Entity {
         [SerializeField, Self] NavMeshAgent agent;
@@ -13,6 +14,20 @@ public class Enemy : MonoBehaviour{
 
         void OnValidate() => this.ValidateRefs();
 
+        void Start() {
+            stateMachine = new StateMachine();
+
+        }
+
+        void At(IState from, IState to, IPredicate condition) => stateMachine>AddTransition(from, to, condition);
+        void Any(IState to, IPredicate condition) => stateMachine.AddAnyTransition(to, condition);
+
+        void Update() {
+            stateMachine.Update();
+        }
+
+        void FixedUpdate() {
+            stateMachine.FixedUpdate();
         }
     }
-}
+}   
